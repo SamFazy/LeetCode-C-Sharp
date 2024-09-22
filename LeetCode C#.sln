@@ -3,33 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001. Two Sum", "001. Two Sum\001. Two Sum.csproj", "{97EB62E0-A8B5-4B13-A8D5-FA5C51BA6AAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "001. Two Sum", "001. Two Sum\001. Two Sum.csproj", "{97EB62E0-A8B5-4B13-A8D5-FA5C51BA6AAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002. Add Two Numbers", "002. Add Two Numbers\002. Add Two Numbers.csproj", "{52BB159D-192D-485C-80EB-5341F60CB310}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "002. Add Two Numbers", "002. Add Two Numbers\002. Add Two Numbers.csproj", "{52BB159D-192D-485C-80EB-5341F60CB310}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "003. Longest Substring Without Repeating Characters", "003. Longest Substring Without Repeating Characters\003. Longest Substring Without Repeating Characters.csproj", "{82F05D7C-E972-4AE9-986E-C6C83C3BE6D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "003. Longest Substring Without Repeating Characters", "003. Longest Substring Without Repeating Characters\003. Longest Substring Without Repeating Characters.csproj", "{82F05D7C-E972-4AE9-986E-C6C83C3BE6D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "004. Median of Two Sorted Arrays", "004. Median of Two Sorted Arrays\004. Median of Two Sorted Arrays.csproj", "{CFD982D4-646D-49CB-84CF-714B220E6826}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "004. Median of Two Sorted Arrays", "004. Median of Two Sorted Arrays\004. Median of Two Sorted Arrays.csproj", "{CFD982D4-646D-49CB-84CF-714B220E6826}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "005. Longest Palindromic Substring", "005. Longest Palindromic Substring\005. Longest Palindromic Substring.csproj", "{A0C60DA3-B07F-4C2D-83F6-0E90CBC70810}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "005. Longest Palindromic Substring", "005. Longest Palindromic Substring\005. Longest Palindromic Substring.csproj", "{A0C60DA3-B07F-4C2D-83F6-0E90CBC70810}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "006. Zigzag Conversion", "006. Zigzag Conversion\006. Zigzag Conversion.csproj", "{41598984-8822-4FD7-9C4B-1202A816607A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "006. Zigzag Conversion", "006. Zigzag Conversion\006. Zigzag Conversion.csproj", "{41598984-8822-4FD7-9C4B-1202A816607A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "007. Reverse Integer", "007. Reverse Integer\007. Reverse Integer.csproj", "{DBD95DFA-8FDD-4459-AE34-692568EFBB28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "007. Reverse Integer", "007. Reverse Integer\007. Reverse Integer.csproj", "{DBD95DFA-8FDD-4459-AE34-692568EFBB28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "008. String to Integer (atoi)", "008. String to Integer (atoi)\008. String to Integer (atoi).csproj", "{6CEEFD1E-49A6-4A7B-9A83-4D8EA1899850}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "008. String to Integer (atoi)", "008. String to Integer (atoi)\008. String to Integer (atoi).csproj", "{6CEEFD1E-49A6-4A7B-9A83-4D8EA1899850}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "009. Palindrome Number", "009. Palindrome Number\009. Palindrome Number.csproj", "{820A4C91-A39D-45ED-9250-77C704288227}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "009. Palindrome Number", "009. Palindrome Number\009. Palindrome Number.csproj", "{820A4C91-A39D-45ED-9250-77C704288227}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "010. Regular Expression Matching", "010. Regular Expression Matching\010. Regular Expression Matching.csproj", "{5C3FF59D-60DD-4805-A5A4-E6046C2B036B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "010. Regular Expression Matching", "010. Regular Expression Matching\010. Regular Expression Matching.csproj", "{5C3FF59D-60DD-4805-A5A4-E6046C2B036B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "011. Container With Most Water", "011. Container With Most Water\011. Container With Most Water.csproj", "{A2808AAB-BE19-45A4-8FC6-A1AC288AF59B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "011. Container With Most Water", "011. Container With Most Water\011. Container With Most Water.csproj", "{A2808AAB-BE19-45A4-8FC6-A1AC288AF59B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "012. Integer to Roman", "012. Integer to Roman\012. Integer to Roman.csproj", "{D0BD25C6-2D74-45A5-AB53-031B18932B3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "012. Integer to Roman", "012. Integer to Roman\012. Integer to Roman.csproj", "{D0BD25C6-2D74-45A5-AB53-031B18932B3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "013. Roman to Integer", "013. Roman to Integer\013. Roman to Integer.csproj", "{1F06B314-A928-4C3A-ABAA-2624683FE968}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "013. Roman to Integer", "013. Roman to Integer\013. Roman to Integer.csproj", "{1F06B314-A928-4C3A-ABAA-2624683FE968}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "014. Longest Common Prefix", "014. Longest Common Prefix\014. Longest Common Prefix.csproj", "{AEDC6951-FF43-4588-BA9F-22303D1850FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "014. Longest Common Prefix", "014. Longest Common Prefix\014. Longest Common Prefix.csproj", "{AEDC6951-FF43-4588-BA9F-22303D1850FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "015. 3Sum", "015. 3Sum\015. 3Sum.csproj", "{2E14A107-079A-44AF-B7F3-9367F98E9084}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{AEDC6951-FF43-4588-BA9F-22303D1850FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEDC6951-FF43-4588-BA9F-22303D1850FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEDC6951-FF43-4588-BA9F-22303D1850FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E14A107-079A-44AF-B7F3-9367F98E9084}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E14A107-079A-44AF-B7F3-9367F98E9084}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E14A107-079A-44AF-B7F3-9367F98E9084}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E14A107-079A-44AF-B7F3-9367F98E9084}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
