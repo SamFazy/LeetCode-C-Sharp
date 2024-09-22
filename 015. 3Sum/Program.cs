@@ -79,7 +79,7 @@ class Program
         //List to populate to hold final result
         IList<IList<int>> result = new List<IList<int>>();
 
-        //Check that mums is larger than 2
+        //Check that nums is larger than 2
         if (!(nums.Length > 2))
         {
             return result;
