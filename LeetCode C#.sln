@@ -43,7 +43,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0019. Remove Nth Node From 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0020. Valid Parentheses", "0020. Valid Parentheses\0020. Valid Parentheses.csproj", "{5CAFA78B-E6EC-4125-9AA4-DC1459A80C17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0217. Contains Duplicate", "0217. Contains Duplicate\0217. Contains Duplicate.csproj", "{933307B2-D483-4661-A836-5396C3834409}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0217. Contains Duplicate", "0217. Contains Duplicate\0217. Contains Duplicate.csproj", "{933307B2-D483-4661-A836-5396C3834409}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0242. Valid Anagram", "0242. Valid Anagram\0242. Valid Anagram.csproj", "{3CC76366-475C-4B28-B416-2CB8CCF8D85B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,10 @@ Global
 		{933307B2-D483-4661-A836-5396C3834409}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{933307B2-D483-4661-A836-5396C3834409}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{933307B2-D483-4661-A836-5396C3834409}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CC76366-475C-4B28-B416-2CB8CCF8D85B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CC76366-475C-4B28-B416-2CB8CCF8D85B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CC76366-475C-4B28-B416-2CB8CCF8D85B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CC76366-475C-4B28-B416-2CB8CCF8D85B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
