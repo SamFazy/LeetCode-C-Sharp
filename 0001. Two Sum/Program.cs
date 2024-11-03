@@ -11,11 +11,12 @@
 
         //Print result
         Console.WriteLine("Test 1:");
+        Console.Write("Output: ");
         foreach (var i in result)
         {
             Console.Write(i + " ");
         }
-        Console.WriteLine("\n");
+        Console.WriteLine("\nExpected: 0, 1\n");
 
         //Create arrays
         int[] array2 = { 3, 2, 4 };
@@ -23,11 +24,12 @@
 
         //Print result
         Console.WriteLine("Test 2:");
+        Console.Write("Output: ");
         foreach (var i in result)
         {
             Console.Write(i + " ");
         }
-        Console.WriteLine("\n");
+        Console.WriteLine("\nExpected: 1, 2\n");
 
         //Create arrays
         int[] array3 = { 3, 3 };
@@ -35,11 +37,12 @@
 
         //Print result
         Console.WriteLine("Test 3:");
+        Console.Write("Output: ");
         foreach (var i in result)
         {
             Console.Write(i + " ");
         }
-        Console.WriteLine("\n");
+        Console.WriteLine("\nExpected: 0, 1\n");
 
 
         //Create arrays
@@ -48,34 +51,46 @@
 
         //Print result
         Console.WriteLine("Test 4:");
+        Console.Write("Output: ");
         foreach (var i in result)
         {
             Console.Write(i + " ");
         }
-        Console.WriteLine("\n");
+        Console.WriteLine("\nExpected: 0, 2\n");
+
+        //Print result
+        int[] array5 = { 0, 4, 3, 0 };
+        result = program.TwoSum(array5, 0);
+
+        Console.WriteLine("Test 5:");
+        Console.Write("Output: ");
+        foreach (var i in result)
+        {
+            Console.Write(i + " ");
+        }
+        Console.WriteLine("\nExpected: 0, 3\n");
     }
 
     public int[] TwoSum(int[] nums, int target)
     {
-        //Make result array
-        int[] result = new int[2];
+        Dictionary<int, int> map = new Dictionary<int, int>();
 
-        //Loop through the array
-        for (int i = 0; i < nums.Length; i++)
+        //Populate dictionary
+        map[nums[0]] = 0;
+
+        //Loop through all elements
+        for (int i = 1; i < nums.Length; i++)
         {
-            for (int j = 0; j < nums.Length; j++)
+            if (map.ContainsKey(target - nums[i]))
             {
-                //If 2 different elements equal target return result
-                if (nums[i] + nums[j] == target && i != j)
-                {
-                    //Result
-                    result[0] = i;
-                    result[1] = j;
-                    return result;
-                }
+                return new int[] { map[target - nums[i]], i  };
+            }
+            else
+            {
+                map[nums[i]] = i;
             }
         }
 
-        return result;
+        return new int[] { };
     }
 }
