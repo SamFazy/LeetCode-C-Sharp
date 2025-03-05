@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0049. Group Anagrams", "004
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0347. Top K Frequent Elements", "0347. Top K Frequent Elements\0347. Top K Frequent Elements.csproj", "{09D4F9FC-3020-4139-AEFB-DB388B493C45}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0238. Product of Array Except Self", "0238. Product of Array Except Self\0238. Product of Array Except Self.csproj", "{63C6A1C4-AD01-43BA-AB0B-F6A3F6E3AF98}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{09D4F9FC-3020-4139-AEFB-DB388B493C45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09D4F9FC-3020-4139-AEFB-DB388B493C45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09D4F9FC-3020-4139-AEFB-DB388B493C45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63C6A1C4-AD01-43BA-AB0B-F6A3F6E3AF98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63C6A1C4-AD01-43BA-AB0B-F6A3F6E3AF98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63C6A1C4-AD01-43BA-AB0B-F6A3F6E3AF98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63C6A1C4-AD01-43BA-AB0B-F6A3F6E3AF98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
