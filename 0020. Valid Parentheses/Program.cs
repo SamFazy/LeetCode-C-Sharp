@@ -15,45 +15,45 @@
         string test7 = "){";
         string test8 = "([}}])";
 
-        //Get results and print
+        //Output
         Console.WriteLine("Test 1:");
         Console.WriteLine("Input: " + test1);
-        Console.WriteLine("Output: " + program.IsValid(test1).ToString());
+        Console.WriteLine("Output: " + program.IsValid(test1));
         Console.WriteLine("Expected: True\n");
 
         Console.WriteLine("Test 2:");
         Console.WriteLine("Input: " + test2);
-        Console.WriteLine("Output: " + program.IsValid(test2).ToString());
+        Console.WriteLine("Output: " + program.IsValid(test2));
         Console.WriteLine("Expected: True\n");
 
         Console.WriteLine("Test 3:");
         Console.WriteLine("Input: " + test3);
-        Console.WriteLine("Output: " + program.IsValid(test3).ToString());
+        Console.WriteLine("Output: " + program.IsValid(test3));
         Console.WriteLine("Expected: False\n");
 
         Console.WriteLine("Test 4:");
         Console.WriteLine("Input: " + test4);
-        Console.WriteLine("Output: " + program.IsValid(test4).ToString());
+        Console.WriteLine("Output: " + program.IsValid(test4));
         Console.WriteLine("Expected: True\n");
 
         Console.WriteLine("Test 5:");
         Console.WriteLine("Input: " + test5);
-        Console.WriteLine("Output: " + program.IsValid(test5).ToString());
+        Console.WriteLine("Output: " + program.IsValid(test5));
         Console.WriteLine("Expected: False\n");
 
         Console.WriteLine("Test 6:");
         Console.WriteLine("Input: " + test6);
-        Console.WriteLine("Output: " + program.IsValid(test6).ToString());
+        Console.WriteLine("Output: " + program.IsValid(test6));
         Console.WriteLine("Expected: False\n");
 
         Console.WriteLine("Test 7:");
         Console.WriteLine("Input: " + test7);
-        Console.WriteLine("Output: " + program.IsValid(test7).ToString());
+        Console.WriteLine("Output: " + program.IsValid(test7));
         Console.WriteLine("Expected: False\n");
 
         Console.WriteLine("Test 8:");
         Console.WriteLine("Input: " + test8);
-        Console.WriteLine("Output: " + program.IsValid(test8).ToString());
+        Console.WriteLine("Output: " + program.IsValid(test8));
         Console.WriteLine("Expected: False\n");
     }
 

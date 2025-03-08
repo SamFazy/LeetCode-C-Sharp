@@ -53,7 +53,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0347. Top K Frequent Elemen
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0238. Product of Array Except Self", "0238. Product of Array Except Self\0238. Product of Array Except Self.csproj", "{63C6A1C4-AD01-43BA-AB0B-F6A3F6E3AF98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0036. Valid Sudoku", "0036. Valid Sudoku\0036. Valid Sudoku.csproj", "{6E9F6211-7019-4117-AD2C-C8DD9653F045}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0036. Valid Sudoku", "0036. Valid Sudoku\0036. Valid Sudoku.csproj", "{6E9F6211-7019-4117-AD2C-C8DD9653F045}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0128. Longest Consecutive Sequence", "0128. Longest Consecutive Sequence\0128. Longest Consecutive Sequence.csproj", "{CFF241E9-080D-4CA8-B307-31D6345A2F01}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -165,6 +167,10 @@ Global
 		{6E9F6211-7019-4117-AD2C-C8DD9653F045}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E9F6211-7019-4117-AD2C-C8DD9653F045}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E9F6211-7019-4117-AD2C-C8DD9653F045}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFF241E9-080D-4CA8-B307-31D6345A2F01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFF241E9-080D-4CA8-B307-31D6345A2F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFF241E9-080D-4CA8-B307-31D6345A2F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFF241E9-080D-4CA8-B307-31D6345A2F01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
