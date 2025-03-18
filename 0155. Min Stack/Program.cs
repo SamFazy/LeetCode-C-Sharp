@@ -1,7 +1,13 @@
 ﻿/**
  * NOTE: I did not create any tests for this LeetCode Question
  */
-
+class Program
+{
+    public static void Main(string[] args)
+    {
+        //Empty
+    }
+}
 
 /**
  * Your MinStack object will be instantiated and called as such:
