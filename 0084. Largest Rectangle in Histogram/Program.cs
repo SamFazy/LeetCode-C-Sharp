@@ -42,7 +42,6 @@
     public int LargestRectangleArea(int[] heights)
     {
         int largestArea = 0;
-        int[] result = new int[heights.Length];
 
         //Stores the indices
         Stack<int> stack = new Stack<int>();

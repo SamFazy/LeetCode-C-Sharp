@@ -69,6 +69,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0853. Car Fleet", "0853. Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0084. Largest Rectangle in Histogram", "0084. Largest Rectangle in Histogram\0084. Largest Rectangle in Histogram.csproj", "{D74A6314-31CE-4E9C-A95A-D5CA14990698}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0167. Two Sum II - Input Array Is Sorted", "0167. Two Sum II - Input Array Is Sorted\0167. Two Sum II - Input Array Is Sorted.csproj", "{6D0C73B7-74F5-4B40-A871-DF163824B510}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -207,6 +209,10 @@ Global
 		{D74A6314-31CE-4E9C-A95A-D5CA14990698}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D74A6314-31CE-4E9C-A95A-D5CA14990698}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D74A6314-31CE-4E9C-A95A-D5CA14990698}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D0C73B7-74F5-4B40-A871-DF163824B510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D0C73B7-74F5-4B40-A871-DF163824B510}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D0C73B7-74F5-4B40-A871-DF163824B510}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D0C73B7-74F5-4B40-A871-DF163824B510}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
