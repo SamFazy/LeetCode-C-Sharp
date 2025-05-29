@@ -17,6 +17,7 @@ class Program
         int[] array7 = { 1, 2, -2, -1 };
         int[] array8 = { -1, 0, 1, 0 };
         int[] array9 = { -2, 0, 1, 1, 2 };
+        int[] array10 = { 2, -3, 0, -2, -5, -5, -4, 1, 2, -2, 2, 0, 2, -4, 5, 5, -10 };
 
         //Get the results and print
         Console.WriteLine("Test 1:");
@@ -72,140 +73,15 @@ class Program
         program.PrintResult(program.ThreeSum(array9));
         Console.WriteLine();
         Console.WriteLine("Expected - [-2,0,2],[-2,1,1]\n");
+
+        Console.WriteLine("Test 10:");
+        Console.Write("Result - ");
+        program.PrintResult(program.ThreeSum(array10));
+        Console.WriteLine();
+        Console.WriteLine("Expected - [-10,5,5],[-5,0,5],[-4,2,2],[-3,-2,5],[-3,1,2],[-2,0,2]\n");
     }
 
-    public IList<IList<int>> ThreeSum(int[] nums)
-    {
-        //List to populate to hold final result
-        IList<IList<int>> result = new List<IList<int>>();
-
-        //Check that nums is larger than 2
-        if (!(nums.Length > 2))
-        {
-            return result;
-        }
-
-        //Sort numbers in array in ascending order
-        QuickSort(0, nums.Length - 1);
-
-        //Put array into dictionary hash map
-        Dictionary<int, int> hashMap = new Dictionary<int, int>();
-
-        for(int i = 0; i < nums.Length; i++)
-        {
-            if (!hashMap.ContainsKey(nums[i]))
-            {
-                hashMap[nums[i]] = i;
-            }
-        }
-
-        bool alreadyExists = false;
-
-        //Find all of the combinations of numbers that can equal 0
-        for (int i = 0; i < nums.Length - 2; i++)
-        {
-            for (int j = i + 1; j < nums.Length; j++)
-            {
-                //Number we are looking for
-                int contains = ((nums[i] + nums[j]) * -1);
-
-                if (hashMap.ContainsKey(contains))
-                {
-                    //Get the index of the recived number and check if its index is larger than j
-                    int index = hashMap[contains];
-
-                    if (index <= j)
-                    {
-                        if (index + 2 < nums.Length && index == i && (nums[index] == nums[index + 1] && nums[index + 1] != nums[index + 2]))
-                        {
-                            continue;
-                        }
-                        else if (index + 1 < nums.Length && hashMap.ContainsKey(nums[index + 1]) && hashMap[nums[index]] == hashMap[nums[index + 1]])
-                        {
-
-                        }
-                        else if (index + 2 < nums.Length && hashMap.ContainsKey(nums[index + 2]) && hashMap[nums[index]] == hashMap[nums[index + 2]])
-                        {
-
-                        }
-                        else
-                        {
-                            continue;
-                        }
-                    }
-
-                    //Create new list
-                    IList<int> newList = new List<int>();
-
-                    if (hashMap.ContainsKey(nums[i]))
-                    {
-                        newList.Add(nums[i]);
-                    }
-                    if (hashMap.ContainsKey(nums[j]))
-                    {
-                        newList.Add(nums[j]);
-                    }
-                    newList.Add(contains);
-
-                    //Check if there is already a list thats the same
-                    foreach (IList<int> list in result)
-                    {
-                        if (newList.Contains(list[0]) && newList.Contains(list[1]) && newList.Contains(list[2]))
-                        {
-                            alreadyExists = true;
-                            break;
-                        }
-                        else
-                        {
-                            alreadyExists = false;
-                        }
-                    }
-
-                    //Add new list to results lists
-                    if (alreadyExists == false)
-                    {
-                        result.Add(newList);
-                    }
-
-                    //Skips numbers that are duplicate to save time
-                    while (nums.Length > j + 1 && nums[j + 1] == nums[j])
-                    {
-                        j++;
-                    }
-                }
-            }
-        }
-        return result;
-
-
-        void QuickSort(int low, int high)
-        {
-            if (low < high)
-            {
-                int pivot = nums[high];
-                int i = low - 1;
-
-                for (int j = low; j < high; j++)
-                {
-                    if (nums[j] < pivot)
-                    {
-                        i++;
-                        int temp = nums[i];
-                        nums[i] = nums[j];
-                        nums[j] = temp;
-                    }
-                }
-                int tempPivot = nums[i + 1];
-                nums[i + 1] = nums[high];
-                nums[high] = tempPivot;
-
-                QuickSort(low, i);
-                QuickSort(i + 2, high);
-            }
-        }
-    }
-
-    public void PrintResult(IList<IList<int>>lists)
+    public void PrintResult(IList<IList<int>> lists)
     {
         foreach (IList<int> list in lists)
         {
@@ -223,5 +99,70 @@ class Program
             }
             Console.Write("]");
         }
+    }
+
+    public IList<IList<int>> ThreeSum(int[] nums)
+    {
+        //List to populate to hold final result
+        IList<IList<int>> result = new List<IList<int>>();
+
+        //Sort the nums array
+        Array.Sort(nums);
+
+        //Go over each element in the array
+        for (int i = 0; i < nums.Length - 2; i++) 
+        {
+            //Skip duplicate elements for i
+            if (i > 0 && nums[i] == nums[i - 1])
+            {
+                continue;
+            }
+
+            //Elements to help iterate
+            int j = i + 1;
+            int k = nums.Length - 1;
+
+            //Check other elements in array
+            while(j < k) 
+            {
+                //Sum of all elements
+                int sum = nums[i] + nums[j] + nums[k];
+
+                //If found a 3Sum of 0
+                if (sum == 0)
+                {
+                    //Add to list
+                    IList<int> list = new List<int> { nums[j], nums[i], nums[k] };
+                    result.Add(list);
+
+                    //Skip duplicates for j and k
+                    while (j < k && nums[j] == nums[j + 1])
+                    {
+                        j++;
+                    }
+
+                    while (j < k && nums[k] == nums[k - 1]) 
+                    { 
+                        k--; 
+                    }
+
+                    j++;
+                    k--;
+                }
+
+                //Increase j if sum is larger than 0
+                else if (sum < 0)
+                {
+                    j++;
+                }
+                //Decrease j if sum is larger than 0
+                else
+                {
+                    k--;
+                }
+            }
+        }
+
+        return result;
     }
 }
