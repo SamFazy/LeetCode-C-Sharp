@@ -55,21 +55,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0238. Product of Array Exce
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0036. Valid Sudoku", "0036. Valid Sudoku\0036. Valid Sudoku.csproj", "{6E9F6211-7019-4117-AD2C-C8DD9653F045}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0128. Longest Consecutive Sequence", "0128. Longest Consecutive Sequence\0128. Longest Consecutive Sequence.csproj", "{CFF241E9-080D-4CA8-B307-31D6345A2F01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0128. Longest Consecutive Sequence", "0128. Longest Consecutive Sequence\0128. Longest Consecutive Sequence.csproj", "{CFF241E9-080D-4CA8-B307-31D6345A2F01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0155. Min Stack", "0155. Min Stack\0155. Min Stack.csproj", "{F0A73AB1-1F15-4622-BBC1-858CEB082139}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0155. Min Stack", "0155. Min Stack\0155. Min Stack.csproj", "{F0A73AB1-1F15-4622-BBC1-858CEB082139}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0150. Evaluate Reverse Polish Notation", "0150. Evaluate Reverse Polish Notation\0150. Evaluate Reverse Polish Notation.csproj", "{E99643EB-2460-485A-B665-16765B6C5AA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0150. Evaluate Reverse Polish Notation", "0150. Evaluate Reverse Polish Notation\0150. Evaluate Reverse Polish Notation.csproj", "{E99643EB-2460-485A-B665-16765B6C5AA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0022. Generate Parentheses", "0022. Generate Parentheses\0022. Generate Parentheses.csproj", "{61097C11-6641-485C-8B82-493282B745A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0022. Generate Parentheses", "0022. Generate Parentheses\0022. Generate Parentheses.csproj", "{61097C11-6641-485C-8B82-493282B745A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0739. Daily Temperatures", "0739. Daily Temperatures\0739. Daily Temperatures.csproj", "{AB47E030-2546-42F2-952B-FF6B02F8CF68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0739. Daily Temperatures", "0739. Daily Temperatures\0739. Daily Temperatures.csproj", "{AB47E030-2546-42F2-952B-FF6B02F8CF68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0853. Car Fleet", "0853. Car Fleet\0853. Car Fleet.csproj", "{F2C02A53-3D45-432A-9BC2-92F335E36CA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0853. Car Fleet", "0853. Car Fleet\0853. Car Fleet.csproj", "{F2C02A53-3D45-432A-9BC2-92F335E36CA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0084. Largest Rectangle in Histogram", "0084. Largest Rectangle in Histogram\0084. Largest Rectangle in Histogram.csproj", "{D74A6314-31CE-4E9C-A95A-D5CA14990698}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0084. Largest Rectangle in Histogram", "0084. Largest Rectangle in Histogram\0084. Largest Rectangle in Histogram.csproj", "{D74A6314-31CE-4E9C-A95A-D5CA14990698}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0167. Two Sum II - Input Array Is Sorted", "0167. Two Sum II - Input Array Is Sorted\0167. Two Sum II - Input Array Is Sorted.csproj", "{6D0C73B7-74F5-4B40-A871-DF163824B510}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0167. Two Sum II - Input Array Is Sorted", "0167. Two Sum II - Input Array Is Sorted\0167. Two Sum II - Input Array Is Sorted.csproj", "{6D0C73B7-74F5-4B40-A871-DF163824B510}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0042. Trapping Rain Water", "0042. Trapping Rain Water\0042. Trapping Rain Water.csproj", "{66AD4084-E833-4583-A565-6DAB621FEEFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -213,6 +215,10 @@ Global
 		{6D0C73B7-74F5-4B40-A871-DF163824B510}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D0C73B7-74F5-4B40-A871-DF163824B510}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D0C73B7-74F5-4B40-A871-DF163824B510}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66AD4084-E833-4583-A565-6DAB621FEEFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66AD4084-E833-4583-A565-6DAB621FEEFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66AD4084-E833-4583-A565-6DAB621FEEFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66AD4084-E833-4583-A565-6DAB621FEEFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
