@@ -15,66 +15,116 @@ class Program
         string s5 = "";
         string s6 = "au";
         string s7 = "dvdf";
+        string s8 = "nfpdmpi";
 
         //Print output
         Console.WriteLine("Test 1:");
-        Console.WriteLine(program.LengthOfLongestSubstring(s1));
+        Console.WriteLine("Output: " + program.LengthOfLongestSubstring(s1));
+        Console.WriteLine("Expected: 3\n");
 
         Console.WriteLine("Test 2:");
-        Console.WriteLine(program.LengthOfLongestSubstring(s2));
+        Console.WriteLine("Output: " + program.LengthOfLongestSubstring(s2));
+        Console.WriteLine("Expected: 1\n");
 
         Console.WriteLine("Test 3:");
-        Console.WriteLine(program.LengthOfLongestSubstring(s3));
+        Console.WriteLine("Output: " + program.LengthOfLongestSubstring(s3));
+        Console.WriteLine("Expected: 3\n");
 
         Console.WriteLine("Test 4:");
-        Console.WriteLine(program.LengthOfLongestSubstring(s4));
+        Console.WriteLine("Output: " + program.LengthOfLongestSubstring(s4));
+        Console.WriteLine("Expected: 1\n");
 
         Console.WriteLine("Test 5:");
-        Console.WriteLine(program.LengthOfLongestSubstring(s5));
+        Console.WriteLine("Output: " + program.LengthOfLongestSubstring(s5));
+        Console.WriteLine("Expected: 0\n");
 
         Console.WriteLine("Test 6:");
-        Console.WriteLine(program.LengthOfLongestSubstring(s6));
+        Console.WriteLine("Output: " + program.LengthOfLongestSubstring(s6));
+        Console.WriteLine("Expected: 2\n");
 
         Console.WriteLine("Test 7:");
-        Console.WriteLine(program.LengthOfLongestSubstring(s7));
+        Console.WriteLine("Output: " + program.LengthOfLongestSubstring(s7));
+        Console.WriteLine("Expected: 3\n");
+
+        Console.WriteLine("Test 8:");
+        Console.WriteLine("Output: " + program.LengthOfLongestSubstring(s8));
+        Console.WriteLine("Expected: 5\n");
     }
 
     public int LengthOfLongestSubstring(string s)
-    {
-        //Create List to hold letters
-        List<char> letters = new List<char>();
+    { 
+        //Create Dictionary to hold values
+        Dictionary<char, int> letterCount = new Dictionary<char, int>();
 
         //Variables
-        int maxCount = 0;
-        int count;
+        int noDuplicateCount = 0;
+        int right = 0;
+        int left = 0;
 
-        //Loops through each letter in s
-        for (int i = 0; i < s.Length; i++)
+        //If the length is larger than 1
+        if(s.Length > 1)
         {
-            //Clear list before checking substring
-            letters.Clear();
+            letterCount[s[right]] = 1;
 
-            //Start counting from current character
-            count = 0;
-
-            //Compare each letter in letters to current letter in s
-            foreach (char c in s.Substring(i))
+            while (true)
             {
-                //If letter does exist in s
-                if (letters.Contains(c))
+                //If right pointer has hit the end
+                if(right == s.Length)
+                {
                     break;
+                }
 
-                //Add letter and increase count
-                letters.Add(c);
-                count++;
+                if (right == s.Length - 1)
+                {
+                    return noDuplicateCount;
+                }
+
+                //Move pointer
+                right++;
+
+                //Increase letter value
+                if (letterCount.ContainsKey(s[right]))
+                    letterCount[s[right]]++;
+                else
+                    letterCount[s[right]] = 1;
+
+                //Get count of current pointer letter
+                int count = letterCount[s[right]];
+
+                //If larger than 1
+                if (count > 1)
+                {
+                    //Loops until there are no more duplicates
+                    do
+                    {
+                        //Remove letter going out of sliding window
+                        letterCount[s[left]]--;
+                        
+                        //Move left poineter
+                        left++;
+
+                        //Get count of current pointer letter
+                        count = letterCount[s[right]];
+
+                    }
+                    while (count >= 2);
+
+                    if (noDuplicateCount < (right - left) + 1)
+                    {
+                        noDuplicateCount = (right - left) + 1;
+                    }
+
+                }
+                else
+                {
+                    if(noDuplicateCount < (right - left) + 1)
+                    {
+                        noDuplicateCount = (right - left) + 1;
+                    }
+                }
             }
-
-            //Sets max count to count if count is larger than max count
-            if (maxCount < count)
-                maxCount = count;
         }
-
-        //Return result
-        return maxCount;
+        
+        return s.Length;
     }
 }
