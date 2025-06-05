@@ -73,7 +73,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0167. Two Sum II - Input Ar
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0042. Trapping Rain Water", "0042. Trapping Rain Water\0042. Trapping Rain Water.csproj", "{66AD4084-E833-4583-A565-6DAB621FEEFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0121. Best Time to Buy and Sell Stock", "0121. Best Time to Buy and Sell Stock\0121. Best Time to Buy and Sell Stock.csproj", "{51771865-A0D2-4383-B0D6-34D41F170C9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0121. Best Time to Buy and Sell Stock", "0121. Best Time to Buy and Sell Stock\0121. Best Time to Buy and Sell Stock.csproj", "{51771865-A0D2-4383-B0D6-34D41F170C9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0424. Longest Repeating Character Replacement", "0424. Longest Repeating Character Replacement\0424. Longest Repeating Character Replacement.csproj", "{29E5E84D-1E0D-46CE-B8B6-373F10D55AAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -225,6 +227,10 @@ Global
 		{51771865-A0D2-4383-B0D6-34D41F170C9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51771865-A0D2-4383-B0D6-34D41F170C9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51771865-A0D2-4383-B0D6-34D41F170C9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29E5E84D-1E0D-46CE-B8B6-373F10D55AAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29E5E84D-1E0D-46CE-B8B6-373F10D55AAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29E5E84D-1E0D-46CE-B8B6-373F10D55AAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29E5E84D-1E0D-46CE-B8B6-373F10D55AAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
