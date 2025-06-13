@@ -79,7 +79,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0424. Longest Repeating Cha
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0567. Permutation in String", "0567. Permutation in String\0567. Permutation in String.csproj", "{E2334484-3E47-4B58-BC75-8F9C11E330C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0076. Minimum Window Substring", "0076. Minimum Window Substring\0076. Minimum Window Substring.csproj", "{48C7AB7D-BBD3-4DE6-9443-5D9FDA98B93B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0076. Minimum Window Substring", "0076. Minimum Window Substring\0076. Minimum Window Substring.csproj", "{48C7AB7D-BBD3-4DE6-9443-5D9FDA98B93B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0239. Sliding Window Maximum", "0239. Sliding Window Maximum\0239. Sliding Window Maximum.csproj", "{202551F1-C429-421D-B115-C07926A6BD22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -243,6 +245,10 @@ Global
 		{48C7AB7D-BBD3-4DE6-9443-5D9FDA98B93B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48C7AB7D-BBD3-4DE6-9443-5D9FDA98B93B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48C7AB7D-BBD3-4DE6-9443-5D9FDA98B93B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{202551F1-C429-421D-B115-C07926A6BD22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{202551F1-C429-421D-B115-C07926A6BD22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{202551F1-C429-421D-B115-C07926A6BD22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{202551F1-C429-421D-B115-C07926A6BD22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
