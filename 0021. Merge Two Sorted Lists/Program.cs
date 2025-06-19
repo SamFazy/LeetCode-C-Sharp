@@ -1,6 +1,4 @@
-﻿using static System.Net.Mime.MediaTypeNames;
-
-class Program
+﻿class Program
 {
     public static void Main(string[] args)
     {
