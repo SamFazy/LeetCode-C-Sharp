@@ -91,6 +91,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0141. Linked List Cycle", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0143. Reorder List", "0143. Reorder List\0143. Reorder List.csproj", "{ADE88D3D-3E85-4C27-B76D-464F7AE15CE8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0138. Copy List with Random Pointer", "0138. Copy List with Random Pointer\0138. Copy List with Random Pointer.csproj", "{F198FDE3-D683-468A-AA4B-E72794C8FBD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -273,6 +275,10 @@ Global
 		{ADE88D3D-3E85-4C27-B76D-464F7AE15CE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADE88D3D-3E85-4C27-B76D-464F7AE15CE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADE88D3D-3E85-4C27-B76D-464F7AE15CE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F198FDE3-D683-468A-AA4B-E72794C8FBD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F198FDE3-D683-468A-AA4B-E72794C8FBD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F198FDE3-D683-468A-AA4B-E72794C8FBD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F198FDE3-D683-468A-AA4B-E72794C8FBD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
