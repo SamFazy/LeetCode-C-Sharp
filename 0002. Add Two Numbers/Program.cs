@@ -1,150 +1,196 @@
-﻿using System.Numerics;
-
-namespace _2._Add_Two_Numbers
+﻿class Program
 {
-    class Program
+    public static void Main(string[] args)
     {
-        static void Main(string[] args)
+        //Create instance of program
+        Program program = new Program();
+
+        //Test Cases
+        ListNode test1L1 = new ListNode(2,
+            new ListNode(4,
+                new ListNode(3
+                )
+            )
+        );
+        ListNode test1L2 = new ListNode(5,
+            new ListNode(6,
+                new ListNode(4
+                )
+            )
+        );
+
+        ListNode test2L1 = new ListNode(0);
+        ListNode test2L2 = new ListNode(0);
+
+        ListNode test3L1 = new ListNode(9,
+            new ListNode(9,
+                new ListNode(9,
+                    new ListNode(9,
+                        new ListNode(9,
+                            new ListNode(9,
+                                new ListNode(9)
+                            )
+                        )
+                    )
+                )
+            )
+        );
+
+        ListNode test3L2 = new ListNode(9,
+            new ListNode(9,
+                new ListNode(9,
+                    new ListNode(9)
+                )
+            )
+        );
+
+        //Output
+        Console.WriteLine("Test 1:");
+        Console.Write("List 1: ");
+        program.printListNode(test1L1);
+        Console.Write("List 2: ");
+        program.printListNode(test1L2);
+        Console.Write("Output: ");
+        program.printListNode(program.AddTwoNumbers(test1L1, test1L2));
+        Console.WriteLine("Expected: 7, 0, 8\n");
+
+        Console.WriteLine("Test 2:");
+        Console.Write("List 1: ");
+        program.printListNode(test2L1);
+        Console.Write("List 2: ");
+        program.printListNode(test2L2);
+        Console.Write("Output: ");
+        program.printListNode(program.AddTwoNumbers(test2L1, test2L2));
+        Console.WriteLine("Expected: 0\n");
+
+        Console.WriteLine("Test 3:");
+        Console.Write("List 1: ");
+        program.printListNode(test3L1);
+        Console.Write("List 2: ");
+        program.printListNode(test3L2);
+        Console.Write("Output: ");
+        program.printListNode(program.AddTwoNumbers(test3L1, test3L2));
+        Console.WriteLine("Expected: 8, 9, 9, 9, 0, 0, 0, 1\n");
+
+    }
+
+    public void printListNode(ListNode listNode)
+    {
+        while (listNode != null)
         {
-            //Make instance of program
-            Program program = new Program();
+            Console.Write(listNode.val);
 
-
-            //ListNode1
-            ListNode listNode1 = new ListNode(2);
-            listNode1.next = new ListNode(4);
-            listNode1.next.next = new ListNode(3);
-            //ListNode2
-            ListNode listNode2 = new ListNode(5);
-            listNode2.next = new ListNode(6);
-            listNode2.next.next = new ListNode(4);
-
-            //Get result
-            ListNode result = program.AddTwoNumbers(listNode1, listNode2);
-
-            //Print results
-            Console.WriteLine("Test 1:");
-
-            while (result != null)
+            if (listNode.next != null)
             {
-                Console.Write(result.val);
-                result = result.next;
+                Console.Write(", ");
             }
-            Console.WriteLine("\n");
 
-
-            //ListNode3
-            ListNode listNode3 = new ListNode(0);
-
-            //ListNode4
-            ListNode listNode4 = new ListNode(0);
-
-            //Get result
-            result = program.AddTwoNumbers(listNode3, listNode4);
-
-            //Print results
-            Console.WriteLine("Test 2:");
-
-            while (result != null)
-            {
-                Console.Write(result.val);
-                result = result.next;
-            }
-            Console.WriteLine("\n");
-
-
-            //ListNode5
-            ListNode listNode5 = new ListNode(9);
-            listNode5.next = new ListNode(9);
-            listNode5.next.next = new ListNode(9);
-            listNode5.next.next.next = new ListNode(9);
-            listNode5.next.next.next.next = new ListNode(9);
-            listNode5.next.next.next.next.next = new ListNode(9);
-            listNode5.next.next.next.next.next.next = new ListNode(9);
-            //ListNode6
-            ListNode listNode6 = new ListNode(9);
-            listNode6.next = new ListNode(9);
-            listNode6.next.next = new ListNode(9);
-            listNode6.next.next.next = new ListNode(9);
-
-            //Get result
-            result = program.AddTwoNumbers(listNode5, listNode6);
-
-            //Print results
-            Console.WriteLine("Test 3:");
-
-            while (result != null)
-            {
-                Console.Write(result.val);
-                result = result.next;
-            }
-            Console.WriteLine("\n");
+            listNode = listNode.next;
         }
 
-        public ListNode AddTwoNumbers(ListNode l1, ListNode l2)
+        Console.WriteLine();
+    }
+
+    //Definition for singly-linked list.
+    public class ListNode {
+         public int val;
+         public ListNode next;
+         public ListNode(int val=0, ListNode next=null) {
+             this.val = val;
+             this.next = next;
+         }
+     }
+
+
+    public ListNode AddTwoNumbers(ListNode l1, ListNode l2)
+    {
+        //Create list nodes to hold result
+        ListNode head = new ListNode();
+        ListNode current = head;
+
+        int overflow = 0;
+
+        //Loops until hits end of both l1 and l2
+        while (l1 != null || l2 != null) 
         {
-
-            //Get numbers that are reversed
-            BigInteger num1 = convertListNodeToBigInt(l1);
-            BigInteger num2 = convertListNodeToBigInt(l2);
-
-            //Add numbers
-            BigInteger result = num1 + num2;
-
-            //Return result
-            return ConvertBigIntToListNode(result);
-        }
-
-
-        //Converts the list node to int and reverses it
-        public BigInteger convertListNodeToBigInt(ListNode listNode)
-        {
-            //Variables
-            string listNum = "";
-            BigInteger num = 0;
-            BigInteger multiplier = 1;
-
-            //Put lists into strings
-            while (listNode != null)
+            //If l1 is null
+            if(l1 == null)
             {
-                listNum += listNode.val.ToString();
-                listNode = listNode.next;
-            }
+                //Add l2 and overflow together
+                int total = l2.val + overflow;
 
-            //Reverse string
-            char[] array = listNum.ToCharArray();
-            Array.Reverse(array);
-            listNum = new string(array);
+                //Reset overflow
+                overflow = 0;
 
-            //Convert to BigInteger
-            num = BigInteger.Parse(listNum);
+                //Account for overflow
+                if (total > 9)
+                {
+                    overflow = total / 10;
+                    total = total % 10;
+                }
 
-            //Return result
-            return num;
-        }
-
-        //Convert int to listNode
-        public ListNode ConvertBigIntToListNode(BigInteger num)
-        {
-            //Incase input is 0
-            if (num == 0)
-            {
-                return new ListNode(0);
-            }
-
-            //Variables
-            ListNode head = new ListNode(0);
-            ListNode current = head;
-
-            //Iterate though the num and create a new node for each digit
-            while (num > 0)
-            {
-                BigInteger digit = num % 10;
-                num /= 10;
-                current.next = new ListNode((int)digit);
+                //Add to current
+                current.next = new ListNode(total);
                 current = current.next;
+
+                //Move nodes forward
+                l2 = l2.next;
             }
-            return head.next;
+            //If l2 is null
+            else if(l2 == null)
+            {
+                //Add l1 and overflow together
+                int total = l1.val + overflow;
+
+                //Reset overflow
+                overflow = 0;
+
+                //Account for overflow
+                if (total > 9)
+                {
+                    overflow = total / 10;
+                    total = total % 10;
+                }
+
+                //Add to current
+                current.next = new ListNode(total);
+                current = current.next;
+
+                //Move nodes forward
+                l1 = l1.next;
+            }
+            //If both are not null
+            else
+            {
+                //Add l1, l2 and overflow together
+                int total = l1.val + l2.val + overflow;
+
+                //Reset overflow
+                overflow = 0;
+
+                //Account for overflow
+                if(total > 9)
+                {
+                    overflow = total / 10;
+                    total = total % 10;
+                }
+
+                //Add to current
+                current.next = new ListNode(total);
+                current = current.next;
+
+                //Move nodes forward
+                l1 = l1.next;
+                l2 = l2.next;
+            }
         }
+
+        //Add if there is any overflow left
+        if(overflow > 0)
+        {
+            current.next = new ListNode(overflow);
+        }
+
+        return head.next;
     }
 }
